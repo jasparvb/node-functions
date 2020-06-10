@@ -8,8 +8,9 @@ function cat(path) {
           console.log("Error reading ", path);
           console.error(err);
           process.exit(1);
+        } else {
+            console.log(data);
         }
-        console.log(data);
     });
 }
 
